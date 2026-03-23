@@ -28,11 +28,26 @@
 }
 
 .tw-button{
+    cursor: pointer;
     margin-left: 16px;
     border: 0;
     border-radius: 999px;
     padding: 6px 16px;
     font-weight: bold;
+    
+    transition: .3s ease background-color;
+}
+
+.tw-button.is-following{
+    border: 1px solid red;
+}
+
+.tw-button:hover{
+    background-color: #09f;
+}
+
+.tw-button.is-following:hover{
+    background-color: red;
 }
 
 body{
